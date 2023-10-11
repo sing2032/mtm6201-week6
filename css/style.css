@@ -1,0 +1,39 @@
+/* . is class name selector */
+.container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+/* space is the descendant combinator */
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li{
+    flex:1;
+    
+}
+
+/* LoVe HAte */
+nav a,
+nav a:link,
+nav a:visited{
+    display:inline-block;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition:transform .5s;
+}
+
+nav a:hover,
+nav a:focus{
+    text-decoration:underline;
+    transform: scale(1.2);
+
+}
+
+nav a:active{
+    transform: scale(1.2) translateX(10px);
+}
